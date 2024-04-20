@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nhat Pham</title>
+  <meta name="description" content="https://nph.mrxl.org">
+  <meta name="author" content="Nhat Pham">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    html {
+      line-height: 1.75;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    main {
+      display: block;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    hr {
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible;
+    }
+
+    pre {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }
+
+    a {
+      background-color: transparent;
+    }
+
+    abbr[title] {
+      border-bottom: none;
+      text-decoration: underline;
+      text-decoration: underline dotted;
+    }
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    code,
+    kbd,
+    samp {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }
+
+    small {
+      font-size: 80%;
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    img {
+      border-style: none;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    input {
+      overflow: visible;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+
+    fieldset {
+      padding: 0.35em 0.75em 0.625em;
+    }
+
+    legend {
+      box-sizing: border-box;
+      color: inherit;
+      display: table;
+      max-width: 100%;
+      padding: 0;
+      white-space: normal;
+    }
+
+    progress {
+      vertical-align: baseline;
+    }
+
+    textarea {
+      overflow: auto;
+    }
+
+    [type="checkbox"],
+    [type="radio"] {
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+    [type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+    details {
+      display: block;
+    }
+
+    summary {
+      display: list-item;
+    }
+
+    template {
+      display: none;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    :root {
+      --background: #f8f8f8;
+      --subtle: #eee;
+      --foreground: #222;
+      --sub: #666;
+      --hover: #dfdfdf;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: var(--background);
+      -webkit-text-size-adjust: 100%;
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 1em;
+      margin: auto;
+      max-width: 42rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    h6 {
+      font-size: 0.9rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--foreground);
+      line-height: 125%;
+      margin-top: 2rem;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--hover);
+      color: var(--foreground);
+    }
+
+    a:visited {
+      color: var(--foreground);
+    }
+
+    a:hover {
+      text-decoration: var(--sub);
+    }
+
+    a:active {
+      color: var(--foreground);
+      background: var(--hover);
+    }
+
+    ul,
+    ol {
+      margin: 1rem 0;
+      padding: 0 0 0 0 2rem;
+    }
+
+    ul ul,
+    ul ol,
+    ol ul,
+    ol ol {
+      margin: 0.3rem 0;
+    }
+
+    li p:last-child {
+      margin-bottom: 0;
+    }
+
+    blockquote {
+      color: var(--sub);
+      margin: 0;
+      padding-left: 1em;
+      font-style: italic;
+      font-weight: 500;
+      border-left: 0.25em var(--hover) solid;
+    }
+
+    hr {
+      display: block;
+      height: 2px;
+      border: 0;
+      border-top: 1px solid var(--subtle);
+      border-bottom: 1px solid var(--subtle);
+      margin: 1em 0;
+      padding: 0;
+    }
+
+    pre,
+    code,
+    kbd,
+    samp {
+      word-wrap: break-word;
+      color: var(--foreground);
+      font-family: monospace;
+      font-size: 0.98em;
+    }
+
+    pre {
+      white-space: pre;
+      word-wrap: break-word;
+    }
+
+    b,
+    strong {
+      font-weight: bold;
+    }
+
+    dfn {
+      font-style: italic;
+    }
+
+    ins {
+      background: #ff9;
+      color: #000;
+      text-decoration: none;
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+    body {
+      color: var(--foreground);
+    }
+    .avatar {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      background-position: center;
+      border-radius: 0.5rem;
+      outline: var(--subtle) solid 3px
+    }
+    button,
+    .button {
+      margin-bottom: 1rem;
+    }
+    input,
+    textarea,
+    select,
+    fieldset {
+      margin-bottom: 1.5rem;
+    }
+    pre,
+    blockquote,
+    dl,
+    figure,
+    p,
+    ol {
+      margin-bottom: 2.5rem;
+    }
+    .u-full-width {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .u-max-full-width {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    .u-pull-right {
+      float: right;
+    }
+    .u-pull-left {
+      float: left;
+    }
+    hr {
+      margin-top: 3rem;
+      margin-bottom: 3.5rem;
+      border-width: 0;
+      border-top: 1px solid #e1e1e1;
+    }
+    .button,
+    button {
+      display: inline-block;
+      text-decoration: none;
+      height: 100%;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 18px;
+      width: 250px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 14px 12px 12px 12px;
+      letter-spacing: 0.1px;
+      white-space: wrap;
+      outline: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    /* Custom styles end */
+    @media screen and (min-width: 768px) {
+      body {
+        margin: auto 5rem;
+      }
+    }
+    </style>
+  <link rel="icon" href="data:image/png;base64,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">
+
+</head>
+
+<body>
+  <h1>About</h1>
+  <p>
+      My name is <a
+        href="https://hvdic.thivien.net/whv/%E6%97%A5#pl0748883af2">Nhật</a>
+      (/ɲə̂ˀt/). I'm a 20-something physics and philosophy undergraduate who's
+      into linux, <a
+        href="https://indieweb.org/green_computing">self-hosting</a>, and <a
+        href="https://benhoyt.com/writings/the-small-web-is-beautiful/">small
+        web</a> spaces. In my free time, I maintain my <a
+        href="https://lonely-desk.top">homelab</a>, (slowly) work through my
+      reading list, and occasionally contribute to free & open-source software.
+      My preferred pronouns are they/she.
+  </p>
+  <hr>
+  <a href="mailto:nph@mrxl.org">Contact</a><br>
+  <a href="https://codeberg.org/mstcl" target="_blank" rel="noopener">Codeberg</a><br>
+  <a href="https://github.com/mstcl" target="_blank" rel="noopener" >GitHub</a><br>
+  <a href="https://linkedin.com/in/nph-hh" target="_blank" rel="noopener">LinkedIn</a><br>
+  <a href="https://orcid.org/0009-0001-6389-4334" target="_blank" rel="noopener">ORCID</a><br>
+  <br>
+</body>
+
+</html>
