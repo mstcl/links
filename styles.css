@@ -7,7 +7,6 @@
 }
 
 html {
-  text-transform: lowercase;
   font-size: 18px;
   line-height: 1.75;
   -webkit-text-size-adjust: 100%;
@@ -199,7 +198,7 @@ html {
 }
 
 body {
-  font-family: "Alegreya", serif;
+  font-family: "IM Fell DW Pica", serif;
   font-optical-sizing: auto;
   font-size: 1rem;
   font-weight: 400;
@@ -245,6 +244,7 @@ h6 {
   color: var(--foreground);
   line-height: 125%;
   margin-top: 2rem;
+  text-transform: lowercase;
 }
 
 p {
@@ -396,7 +396,7 @@ hr {
 }
 
 li::marker {
-  content: "∗";
+  content: "∗ ";
   font-size: 1.2em;
 }
 
